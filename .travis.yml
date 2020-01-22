@@ -9,6 +9,7 @@ addons:
             - mercurial
             - ninja-build
             - perl
+            - python3-pip
             - valgrind
             - xz-utils
             - zip
