@@ -557,7 +557,10 @@ class MatrixMod:
 @click.option(
     '--top', default=10000,
     help='calculate the sum of f(x**3,x**4) to what limit')
-def main(top):
+@click.option(
+    '--bottom', default=1,
+    help='calculate the sum of f(x**3,x**4) starting from what limit')
+def main(top, bottom):
     # top = int(sys.argv.pop(1)) if len(sys.argv) >= 2 else 10000
     mat = MatrixMod(10 ** 9 + 7)
     s = 0
@@ -582,23 +585,27 @@ def main(top):
                 compare(ret, good_ret, "calc_f({},{})".format(n, m))
 
     k_checkpoint = 10
-    for k in range(1, k_checkpoint + 1):
-        n = k ** 3
-        m = n * k
-        print_('before', n, m)
-        sys.stdout.flush()
-        ret = mat.calc_f(n, m)
-        print_('after', n, m, ret)
-        sys.stdout.flush()
-        good_ret = not_so_brute_calc_f(n, m)
-        good_ret_mod = good_ret % mat.MOD
-        # good_ret = ret
-        compare(ret, good_ret_mod, "calc_f(k={};n={};m={})".format(k, n, m))
-        sys.stdout.flush()
-        s += ret
-        sys.stdout.flush()
-        if k == 3:
-            compare(s, 7128, "S(3)")
+    if bottom == 1:
+        for k in range(1, k_checkpoint + 1):
+            n = k ** 3
+            m = n * k
+            print_('before', n, m)
+            sys.stdout.flush()
+            ret = mat.calc_f(n, m)
+            print_('after', n, m, ret)
+            sys.stdout.flush()
+            good_ret = not_so_brute_calc_f(n, m)
+            good_ret_mod = good_ret % mat.MOD
+            # good_ret = ret
+            compare(
+                ret, good_ret_mod, "calc_f(k={};n={};m={})".format(k, n, m))
+            sys.stdout.flush()
+            s += ret
+            sys.stdout.flush()
+            if k == 3:
+                compare(s, 7128, "S(3)")
+    else:
+        k_checkpoint = bottom - 1
 
     s %= mat.MOD
     compare(s, 32287064, "s[10]")
