@@ -11,5 +11,11 @@ PYPROG = 685-v1.py
 update: /home/shlomif/progs/riddles/project-euler/git/project-euler/685/685-v1.py
 	cp -f $< $(PYPROG)
 
+run:
+	python3 $(PYPROG)
+
+pypy3run:
+	pypy3 $(PYPROG)
+
 # vim:ft=make
 #
