@@ -1,0 +1,30 @@
+addons:
+    apt:
+        packages:
+            - build-essential
+            - cmake
+            - cmake-data
+            - cpanminus
+            - libperl-dev
+            - mercurial
+            - ninja-build
+            - perl
+            - valgrind
+            - xz-utils
+            - zip
+cache:
+    ccache: true
+    directories:
+        - $HOME/perl_modules
+os: linux
+dist: xenial
+install:
+    - which python3
+    - python3 -m pip install click six sparse_list
+perl:
+    - "5.26"
+python:
+    - "3.6"
+script:
+    - "_verbose() { export HARNESS_VERBOSE=1 ; } ; python3 685-v1.py --top=15"
+sudo: false
