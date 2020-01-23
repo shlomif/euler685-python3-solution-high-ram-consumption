@@ -4,6 +4,8 @@ This a demo repository for a problem I am having with [cpython3](https://en.wik
 and [pypy3](https://en.wikipedia.org/wiki/PyPy) where the [program](./685-v1.py) consumes
 a lot of RAM quickly on [Fedora 31](https://en.wikipedia.org/wiki/Fedora_%28operating_system%29).
 
+It is a work-in-progress solution to [this project euler challenge](https://projecteuler.net/problem=685).
+
 # To reproduce
 
 Run `gmake run`.
