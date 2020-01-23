@@ -8,6 +8,12 @@ a lot of RAM quickly on [Fedora 31](https://en.wikipedia.org/wiki/Fedora_%28oper
 
 Run `gmake run`.
 
+# How much is "high RAM consumption"?
+
+You can find a [screenshot](./images/high-consume-evidence-on-8-GB-computer/pypy.png) of htop
+and a similar [text transcript of the terminal](./images/high-consume-evidence-on-8-GB-computer/pypy.txt)
+wheree it shows it consumes over 1-2 GB of RAM before reaching k=1,000 (out of max k=10,000).
+
 ## Attempts to fix:
 
 I tried using https://pypi.org/project/memory-profiler/ but it slowed down the code and did not

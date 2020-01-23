@@ -1,0 +1,64 @@
+before 163 4330747 705911761
+count_new_9s 939
+hit (4322293, 480255)
+count_new_9s 468
+hit (4318081, 479787)
+count_new_9s 58
+hit (4317559, 479729)
+count_new_9s 3
+after 4330747 705911761
+after s 163 107291721
+before 164 4410944 723394816
+count_new_9s 957
+hit (4402330, 489148)
+count_new_9s 477
+hit (4398037, 488671)
+count_new_9s 29
+hit (4397776, 488642)
+count_new_9s 14
+after 4410944 723394816
+after s 164 927512961
+before 165 4492125 741200625
+count_new_9s 974
+hit (4483357, 498151)
+count_new_9s 486
+hit (4478983, 497665)
+hit (4474609, 497179)
+count_new_9s 15
+hit (4478848, 497650)
+hit (4478713, 497635)
+count_new_9s 7
+hit (4478785, 497643)
+count_new_9s 3
+hit (4478758, 497640)
+count_new_9s 1
+after 4492125 741200625
+after s 165 729425952
+before 166 4574296 759333136
+
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                                                                                     
+  1  [||                                                                  2.0%]   Tasks: 83, 60 thr, 108 kthr; 2 running                                             
+  2  [||                                                                  1.3%]   Load average: 0.93 0.62 0.58                                                       
+  3  [||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||100.0%]   Uptime: 4 days, 23:10:48                                                           
+  4  [||                                                                  1.3%]                                                                                      
+  Mem[||||||||||||||||||||||||||||||||||||||||||||||||||||||||||   1.88G/7.69G]                                                                                      
+  Swp[|                                                             137M/61.8G]                                                                                      
+                                                                                                                                                                     
+  PID USER      PRI  NI  VIRT   RES   SHR S CPU% MEM%   TIME+  Command                                                                                               
+22968 shlomif    20   0 1491M 1337M 43828 R 99.7 17.0  1:45.12 pypy3 685-v1.py                                                                                       
+22572 shlomif    20   0  759M 67004 54308 S  2.7  0.8  0:03.10 konsole                                                                                               
+22564 root       20   0  169M 42692 32136 S  0.7  0.5  0:01.02 Xorg :0 vt1 -keeptty -auth /home/shlomif/.serverauth.22541 -deferglyphs 16                            
+23090 shlomif    20   0  126M  3844  3160 R  0.0  0.0  0:00.13 htop                                                                                                  
+22573 shlomif    20   0  759M 67004 54308 S  0.0  0.8  0:00.06 konsole                                                                                               
+ 1269 redis      20   0  417M  166M  4460 S  0.0  2.1  5:37.07 /usr/bin/redis-server 127.0.0.1:6379                                                                  
+22708 shlomif    20   0  126M  4700  2948 S  0.0  0.1  0:00.33 tmux                                                                                                  
+22569 shlomif    20   0  294M 17908 14704 S  0.0  0.2  0:00.24 jwm                                                                                                   
+   10 root       20   0     0     0     0 I  0.0  0.0  3:47.04 rcu_sched                                                                                             
+  521 root       20   0  2388  1664  1604 S  0.0  0.0  0:03.25 ifplugd -I -b -i eno1                                                                                 
+22188 root       20   0     0     0     0 I  0.0  0.0  0:00.17 kworker/u8:0-i915                                                                                     
+  572 root       20   0  174M 62992 59048 S  0.0  0.8  0:51.21 systemd-journald                                                                                      
+20806 root       20   0     0     0     0 I  0.0  0.0  0:00.14 kworker/u8:47-events_unbound                                                                          
+    1 root       20   0  170M  9864  6448 S  0.0  0.1  0:44.60 init                                                                                                  
+F1Help  F2Setup F3SearchF4FilterF5Tree  F6SortByF7Nice -F8Nice +F9Kill  F10Quit                                                                                      
+[0] 0:htop*                                                                                                                                   telaviv1.shlomifish.org
