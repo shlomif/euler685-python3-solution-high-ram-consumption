@@ -6,6 +6,11 @@ a lot of RAM quickly on [Fedora 31](https://en.wikipedia.org/wiki/Fedora_%28oper
 
 It is a work-in-progress solution to [this project euler challenge](https://projecteuler.net/problem=685).
 
+## Update: A Solution was Found
+
+Upon further investigation, using [tracemalloc](https://docs.python.org/3/library/tracemalloc.html)
+turned out to be good enough. Thanks to everyone who helped.
+
 # To reproduce
 
 Run `gmake run`.
